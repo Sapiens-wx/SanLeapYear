@@ -29,7 +29,15 @@ public class Pjump_down : PStateBase
         while(true){
             Movement();
             ApplyGravity();
+            CeilingCheck();
             yield return wait;
+        }
+    }
+    internal override void CeilingCheck(){
+        if(Physics2D.OverlapArea((Vector2)player.transform.position+player.leftTop, (Vector2)player.transform.position+player.rightTop, GameManager.inst.groundLayer)){
+            if(player.v.y>0){
+                player.v.y=0;
+            } 
         }
     }
     override internal void ApplyGravity(){
