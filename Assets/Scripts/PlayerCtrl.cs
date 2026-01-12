@@ -7,7 +7,7 @@ public class PlayerCtrl : MonoBehaviour
 {
     public Animator swordAnimator;
     public BoxCollider2D bc;
-    public SpriteRenderer spr;
+    public SpriteRenderer spr, playerStateSpr;
     public float gravity, maxFallSpd;
     public float keyDownBuffTime;
     [Header("Movement")]
@@ -162,6 +162,8 @@ public class PlayerCtrl : MonoBehaviour
             spr.SetPropertyBlock(matPB);
         }, .5f, counterAnimDuration));
         counterAnim.Pause();
+
+        SwitchState(PlayerState.Normal);
     }
 
     // Update is called once per frame
@@ -209,12 +211,15 @@ public class PlayerCtrl : MonoBehaviour
         {
             case PlayerState.Normal:
                 GameManager.inst.waterCollider.isTrigger=false;
+                playerStateSpr.sprite=GameManager.inst.normalSpr;
                 break;
             case PlayerState.LavaDeath:
                 GameManager.inst.waterCollider.isTrigger=true;
+                playerStateSpr.sprite=GameManager.inst.lavaSpr;
                 break;
             case PlayerState.WaterDeath:
                 GameManager.inst.waterCollider.isTrigger=false;
+                playerStateSpr.sprite=GameManager.inst.waterSpr;
                 break;
         }
     }

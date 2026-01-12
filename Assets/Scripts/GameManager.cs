@@ -4,6 +4,7 @@ public class GameManager : MonoBehaviour{
     public LayerMask groundLayer,playerLayer;
     public LayerMask lavaLayer, waterLayer, glassLayer, normalLayer;
     public CompositeCollider2D lavaCollider, waterCollider, normalCollider, glassCollider;
+    public Sprite lavaSpr, waterSpr, normalSpr, glassSpr;
 
     public static GameManager inst;
     void Awake(){

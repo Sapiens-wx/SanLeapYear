@@ -46,16 +46,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groundLayer:
     serializedVersion: 2
-    m_Bits: 64
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  playerSwordLayer:
-    serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 464
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
-  movablePlatformLayer:
+  lavaLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
+  waterLayer:
+    serializedVersion: 2
+    m_Bits: 16
+  glassLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  normalLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  lavaCollider: {fileID: 0}
+  waterCollider: {fileID: 0}
+  normalCollider: {fileID: 0}
+  glassCollider: {fileID: 0}
+  lavaSpr: {fileID: 227810384, guid: 491d91ede60487245909683f494147f0, type: 3}
+  waterSpr: {fileID: -2029412582, guid: 491d91ede60487245909683f494147f0, type: 3}
+  normalSpr: {fileID: 327779232, guid: 491d91ede60487245909683f494147f0, type: 3}
+  glassSpr: {fileID: 0}
