@@ -51,7 +51,7 @@ public class PlayerCtrl : MonoBehaviour
     //read input
     bool readInput;
     // player state
-    PlayerState playerState;
+    [HideInInspector] [SerializeField] public PlayerState playerState;
     public bool ReadInput{
         get=>readInput;
         set{

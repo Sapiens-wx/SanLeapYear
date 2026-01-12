@@ -34,7 +34,11 @@ public class Pjump_down : PStateBase
         }
     }
     internal override void CeilingCheck(){
-        if(Physics2D.OverlapArea((Vector2)player.transform.position+player.leftTop, (Vector2)player.transform.position+player.rightTop, GameManager.inst.groundLayer)){
+        LayerMask ceilingLayer=GameManager.inst.groundLayer;
+        //if the player is bounced up by lava, keep the momentum
+        if(PlayerCtrl.inst.playerState==PlayerState.WaterDeath)
+            ceilingLayer^=GameManager.inst.normalLayer;
+        if(Physics2D.OverlapArea((Vector2)player.transform.position+player.leftTop, (Vector2)player.transform.position+player.rightTop, ceilingLayer)){
             if(player.v.y>0){
                 player.v.y=0;
             } 

@@ -1359,26 +1359,6 @@ PrefabInstance:
       propertyPath: normalCollider
       value: 
       objectReference: {fileID: 1981132777}
-    - target: {fileID: 5923290434992677404, guid: 29c6f6b7c5717fb4e9e09b014e31cdbf, type: 3}
-      propertyPath: lavaLayer.m_Bits
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 5923290434992677404, guid: 29c6f6b7c5717fb4e9e09b014e31cdbf, type: 3}
-      propertyPath: glassLayer.m_Bits
-      value: 256
-      objectReference: {fileID: 0}
-    - target: {fileID: 5923290434992677404, guid: 29c6f6b7c5717fb4e9e09b014e31cdbf, type: 3}
-      propertyPath: waterLayer.m_Bits
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 5923290434992677404, guid: 29c6f6b7c5717fb4e9e09b014e31cdbf, type: 3}
-      propertyPath: groundLayer.m_Bits
-      value: 464
-      objectReference: {fileID: 0}
-    - target: {fileID: 5923290434992677404, guid: 29c6f6b7c5717fb4e9e09b014e31cdbf, type: 3}
-      propertyPath: normalLayer.m_Bits
-      value: 64
-      objectReference: {fileID: 0}
     - target: {fileID: 6724606403899670997, guid: 29c6f6b7c5717fb4e9e09b014e31cdbf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2615,18 +2595,6 @@ PrefabInstance:
     - target: {fileID: 2782972588472661197, guid: 8a4fb40317a4ffd4aafec915430ebded, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7411083414507674771, guid: 8a4fb40317a4ffd4aafec915430ebded, type: 3}
-      propertyPath: jumpHeight
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7411083414507674771, guid: 8a4fb40317a4ffd4aafec915430ebded, type: 3}
-      propertyPath: lavaJumpHeight
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7411083414507674771, guid: 8a4fb40317a4ffd4aafec915430ebded, type: 3}
-      propertyPath: lavaJumpInterval
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8876006430202575169, guid: 8a4fb40317a4ffd4aafec915430ebded, type: 3}
       propertyPath: m_LocalPosition.x

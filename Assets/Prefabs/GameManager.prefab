@@ -69,4 +69,3 @@ MonoBehaviour:
   lavaSpr: {fileID: 227810384, guid: 491d91ede60487245909683f494147f0, type: 3}
   waterSpr: {fileID: -2029412582, guid: 491d91ede60487245909683f494147f0, type: 3}
   normalSpr: {fileID: 327779232, guid: 491d91ede60487245909683f494147f0, type: 3}
-  glassSpr: {fileID: 0}

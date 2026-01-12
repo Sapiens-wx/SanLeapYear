@@ -142,7 +142,7 @@ MonoBehaviour:
   keyDownBuffTime: 0.08
   xspd: 6
   jumpKey: 32
-  jumpHeight: 2.8
+  jumpHeight: 2
   jumpInterval: 0.34
   coyoteTime: 0.1
   lavaJumpHeight: 7
@@ -168,6 +168,7 @@ MonoBehaviour:
   lavaJumpYSpd: 0
   dir: 0
   hitBy: {fileID: 0}
+  playerState: 0
 --- !u!50 &7416915684811736462
 Rigidbody2D:
   serializedVersion: 4
